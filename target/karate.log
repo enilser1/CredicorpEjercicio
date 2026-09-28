@@ -1,0 +1,137 @@
+00:15:19.738 [main] DEBUG com.intuit.karate.Suite - [config] classpath:karate-config.js
+00:15:20.775 [pool-2-thread-1] INFO  com.intuit.karate - karate.env system property was: null 
+00:15:21.100 [pool-2-thread-1] DEBUG com.intuit.karate - request:
+1 > POST https://api.dify.ai/v1/chat-messages
+1 > Authorization: Bearer app-SwuyU9MRM2ELNy5QTpGtdNmO
+1 > Content-Type: application/json; charset=UTF-8
+1 > Content-Length: 88
+1 > Host: api.dify.ai
+1 > Connection: Keep-Alive
+1 > User-Agent: Apache-HttpClient/4.5.14 (Java/17.0.20)
+1 > Accept-Encoding: gzip,deflate
+{"inputs":{},"query":"Esta todo correctamente?","response_mode":"blocking","user":"Nil"}
+
+00:15:43.288 [pool-2-thread-1] DEBUG com.intuit.karate - response time in milliseconds: 22186
+1 < 200
+1 < Date: Mon, 28 Sep 2026 05:15:41 GMT
+1 < Content-Type: application/json; charset=utf-8
+1 < Connection: keep-alive
+1 < X-Frame-Options: DENY
+1 < Access-Control-Allow-Origin: *
+1 < Access-Control-Expose-Headers: X-Env, X-Trace-Id, X-Version
+1 < Vary: Cookie
+1 < Vary: Accept-Encoding
+1 < Via: 1.1 Caddy
+1 < X-Env: PRODUCTION
+1 < X-Span-Id: 4ce2804a7cec8a54
+1 < X-Trace-Id: 6bd65d7ebdb6e95c1fe0ffe9534aff0b
+1 < X-Version: 1.17.1
+1 < cf-cache-status: DYNAMIC
+1 < Server-Timing: cfCacheStatus;desc="DYNAMIC"
+1 < Server-Timing: cfEdge;dur=9,cfOrigin;dur=21456
+1 < Report-To: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=IW5lbZsHhRLohM7CRFXNJxsF09bKF61NyZAYJ8nFcsT%2FJRpGj8NTJIrhZIHHf2xtK%2BGuB4tWlGC%2BuRFfl62YxmBEy8Iqu%2BfSQWvbY4wgPfJs1kbaHrolxI1tjszm"}]}
+1 < Nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < X-Content-Type-Options: nosniff
+1 < Server: cloudflare
+1 < CF-RAY: a420450cfa6f639c-GIG
+{"event": "message", "task_id": "450c7c97-6a2b-4810-b90d-c498da7fba98", "id": "8b585477-0f81-45f8-84ec-5d7203b65cce", "message_id": "8b585477-0f81-45f8-84ec-5d7203b65cce", "conversation_id": "793c7eb2-e237-48b6-abe5-2fcd34bae80b", "mode": "advanced-chat", "answer": "S\u00ed, todo est\u00e1 correcto.", "metadata": {"annotation_reply": null, "retriever_resources": [{"position": 1, "dataset_id": "f9b66d8b-b1a3-4649-92b5-61d18de06fd4", "dataset_name": "historias.txt...", "document_id": "458ce56e-eff9-4182-a1d5-53f5e529a6d6", "document_name": "historias.txt", "data_source_type": "upload_file", "segment_id": "23160314-2cfd-4b16-a234-dfc3bcedd3fc", "retriever_from": "workflow", "score": 0.5254349940463757, "hit_count": 1, "word_count": 56, "segment_position": 13, "index_node_hash": "cbb484630b799acc185becf7bc7480ae9325bbc120d1f57a150a23403dcb7d28", "content": "- Y deber\u00eda ver s\u00f3lo los libros del titulo seleccionado.", "page": null, "doc_metadata": null, "title": null, "files": null, "summary": null}, {"position": 2, "dataset_id": "f9b66d8b-b1a3-4649-92b5-61d18de06fd4", "dataset_name": "historias.txt...", "document_id": "458ce56e-eff9-4182-a1d5-53f5e529a6d6", "document_name": "historias.txt", "data_source_type": "upload_file", "segment_id": "8db708d1-bed0-460e-a10d-390037df6e2f", "retriever_from": "workflow", "score": 0.45848489450735197, "hit_count": 2, "word_count": 46, "segment_position": 5, "index_node_hash": "918187b33c9f00d8522ff7a84ecdbf67580cfcca340a777ff302d99caec1a22c", "content": "Criterio de Aceptacion : Exploraci\u00f3n de libros", "page": null, "doc_metadata": null, "title": null, "files": null, "summary": null}, {"position": 3, "dataset_id": "f9b66d8b-b1a3-4649-92b5-61d18de06fd4", "dataset_name": "historias.txt...", "document_id": "458ce56e-eff9-4182-a1d5-53f5e529a6d6", "document_name": "historias.txt", "data_source_type": "upload_file", "segment_id": "bcdc22c2-6f63-43aa-95c9-e60e2b02f203", "retriever_from": "workflow", "score": 0.40510023219508723, "hit_count": 1, "word_count": 33, "segment_position": 3, "index_node_hash": "d758acc3ce842e0b549fc7225f29133c2f45afdf0061f2887622096da8143293", "content": "Quiero acceder a la tienda online", "page": null, "doc_metadata": null, "title": null, "files": null, "summary": null}], "usage": {"prompt_tokens": 109, "prompt_unit_price": "1.25", "prompt_price_unit": "0.000001", "prompt_price": "0.0001363", "completion_tokens": 499, "completion_unit_price": "10", "completion_price_unit": "0.000001", "completion_price": "0.00499", "total_tokens": 608, "total_price": "0.0051263", "currency": "USD", "latency": 18.358, "time_to_first_token": 20.819, "time_to_generate": 0.068}, "reasoning": {}}, "created_at": 1790572521}
+
+00:15:43.305 [pool-2-thread-1] INFO  com.intuit.karate - [print] {
+  "event": "message",
+  "task_id": "450c7c97-6a2b-4810-b90d-c498da7fba98",
+  "id": "8b585477-0f81-45f8-84ec-5d7203b65cce",
+  "message_id": "8b585477-0f81-45f8-84ec-5d7203b65cce",
+  "conversation_id": "793c7eb2-e237-48b6-abe5-2fcd34bae80b",
+  "mode": "advanced-chat",
+  "answer": "Sí, todo está correcto.",
+  "metadata": {
+    "annotation_reply": null,
+    "retriever_resources": [
+      {
+        "position": 1,
+        "dataset_id": "f9b66d8b-b1a3-4649-92b5-61d18de06fd4",
+        "dataset_name": "historias.txt...",
+        "document_id": "458ce56e-eff9-4182-a1d5-53f5e529a6d6",
+        "document_name": "historias.txt",
+        "data_source_type": "upload_file",
+        "segment_id": "23160314-2cfd-4b16-a234-dfc3bcedd3fc",
+        "retriever_from": "workflow",
+        "score": 0.5254349940463757,
+        "hit_count": 1,
+        "word_count": 56,
+        "segment_position": 13,
+        "index_node_hash": "cbb484630b799acc185becf7bc7480ae9325bbc120d1f57a150a23403dcb7d28",
+        "content": "- Y debería ver sólo los libros del titulo seleccionado.",
+        "page": null,
+        "doc_metadata": null,
+        "title": null,
+        "files": null,
+        "summary": null
+      },
+      {
+        "position": 2,
+        "dataset_id": "f9b66d8b-b1a3-4649-92b5-61d18de06fd4",
+        "dataset_name": "historias.txt...",
+        "document_id": "458ce56e-eff9-4182-a1d5-53f5e529a6d6",
+        "document_name": "historias.txt",
+        "data_source_type": "upload_file",
+        "segment_id": "8db708d1-bed0-460e-a10d-390037df6e2f",
+        "retriever_from": "workflow",
+        "score": 0.45848489450735197,
+        "hit_count": 2,
+        "word_count": 46,
+        "segment_position": 5,
+        "index_node_hash": "918187b33c9f00d8522ff7a84ecdbf67580cfcca340a777ff302d99caec1a22c",
+        "content": "Criterio de Aceptacion : Exploración de libros",
+        "page": null,
+        "doc_metadata": null,
+        "title": null,
+        "files": null,
+        "summary": null
+      },
+      {
+        "position": 3,
+        "dataset_id": "f9b66d8b-b1a3-4649-92b5-61d18de06fd4",
+        "dataset_name": "historias.txt...",
+        "document_id": "458ce56e-eff9-4182-a1d5-53f5e529a6d6",
+        "document_name": "historias.txt",
+        "data_source_type": "upload_file",
+        "segment_id": "bcdc22c2-6f63-43aa-95c9-e60e2b02f203",
+        "retriever_from": "workflow",
+        "score": 0.40510023219508723,
+        "hit_count": 1,
+        "word_count": 33,
+        "segment_position": 3,
+        "index_node_hash": "d758acc3ce842e0b549fc7225f29133c2f45afdf0061f2887622096da8143293",
+        "content": "Quiero acceder a la tienda online",
+        "page": null,
+        "doc_metadata": null,
+        "title": null,
+        "files": null,
+        "summary": null
+      }
+    ],
+    "usage": {
+      "prompt_tokens": 109,
+      "prompt_unit_price": "1.25",
+      "prompt_price_unit": "0.000001",
+      "prompt_price": "0.0001363",
+      "completion_tokens": 499,
+      "completion_unit_price": "10",
+      "completion_price_unit": "0.000001",
+      "completion_price": "0.00499",
+      "total_tokens": 608,
+      "total_price": "0.0051263",
+      "currency": "USD",
+      "latency": 18.358,
+      "time_to_first_token": 20.819,
+      "time_to_generate": 0.068
+    },
+    "reasoning": {
+    }
+  },
+  "created_at": 1790572521
+}
+ 
+00:15:43.889 [pool-3-thread-1] INFO  com.intuit.karate.Suite - <<pass>> feature 1 of 1 (0 remaining) classpath:examples/users/users.feature
